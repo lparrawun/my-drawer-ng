@@ -21,6 +21,14 @@ const routes: Routes = [
     loadChildren: () => import('~/app/featured/featured.module').then((m) => m.FeaturedModule),
   },
   {
+    path: 'sales',
+    loadChildren: () => import('~/app/sales/sales.module').then((m) => m.SalesModule),
+  },
+  {
+    path: 'purchase',
+    loadChildren: () => import('~/app/purchase/purchase.module').then((m) => m.PurchaseModule),
+  },
+  {
     path: 'settings',
     loadChildren: () => import('~/app/settings/settings.module').then((m) => m.SettingsModule),
   },
